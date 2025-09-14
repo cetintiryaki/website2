@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Çetin Tiryaki — CV</title>
+  <meta name="description" content="CV — Full‑Stack / Test Automation / Networking / AI"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{ --ink:#111315; --muted:#585b63; --rule:#D9DCE1; --accent:#0F4C81; }
+    @page { size: A4; margin: 14mm; }
+    html,body{background:#f6f7f9;}
+
+    /* Screen-only top controls */
+    .print-controls{position:sticky; top:0; z-index:999; display:flex; gap:.5rem; align-items:center; justify-content:space-between; padding:.6rem .8rem; background:#ffffffcc; -webkit-backdrop-filter:saturate(130%) blur(8px); backdrop-filter:saturate(130%) blur(8px); border-bottom:1px solid rgba(0,0,0,.06);} 
+    .print-controls .btn{display:inline-block; padding:.55rem .8rem; border:1px solid #dcdfe4; border-radius:10px; background:#fff; color:#111; text-decoration:none; font:600 14px/1.1 Inter, system-ui;}
+    .print-controls .btn:hover{box-shadow:0 6px 18px rgba(16,24,40,.08);} 
+
+    .page, .page * { font-family:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height:1.3; color:var(--ink); }
+    .page { width:210mm; min-height:297mm; margin:12px auto; background:#fff; box-shadow:0 0 0 1px rgba(0,0,0,.08), 0 10px 30px rgba(0,0,0,.08); position:relative; }
+    .page-inner{ padding:12mm 12mm; }
+
+    .pb-before{ page-break-before: always; }
+    .avoid-break{ page-break-inside: avoid; }
+
+    @media print{
+      html,body{background:#fff;}
+      .print-controls{display:none !important;}
+      .page{ box-shadow:none; margin:0; width:auto; min-height:auto; }
+      .page-inner{ padding:0; }
+      .page a{ color: inherit; text-decoration: none; }
+    }
+
+    /* Header */
+    .header{ display:grid; grid-template-columns: 1fr auto; gap:8mm; align-items:start; border-bottom:1px solid var(--rule); padding-bottom:6mm; margin-bottom:7mm; }
+    .identity{ display:grid; grid-template-columns: auto 1fr; gap:6mm; align-items:center; }
+    .avatar{ width:28mm; height:28mm; border-radius:50%; object-fit:cover; border:1px solid var(--rule); }
+    .name{ font-size:20pt; font-weight:700; letter-spacing:.1px; }
+    .role{ font-size:11pt; color:var(--muted); margin-top:2mm; }
+    .contact{ text-align:right; font-size:9.5pt; color:var(--muted); }
+    .contact a{ color:var(--muted); text-decoration:none; border-bottom:1px dotted rgba(15,76,129,.35); }
+
+    /* Columns */
+    .cols{ display:grid; grid-template-columns: 34% 1fr; gap:8mm; }
+    .col-left{ border-right:1px solid var(--rule); padding-right:8mm; }
+    .col-right{ padding-left:0; }
+
+    /* Sections */
+    .section{ margin-bottom:7mm; }
+    .section-title{ font-size:11pt; font-weight:700; text-transform:uppercase; letter-spacing:.8px; color:var(--accent); border-bottom:1px solid var(--rule); padding-bottom:3mm; margin-bottom:4mm; }
+    .item{ margin-bottom:4mm; }
+    .item h4{ font-size:10.5pt; margin:0 0 1mm 0; }
+    .meta{ font-size:9pt; color:var(--muted); margin-bottom:1.5mm; }
+    .bullets{ margin:0; padding-left:4mm; }
+    .bullets li{ margin:.8mm 0; font-size:9.5pt; }
+    .tag-list{ display:flex; flex-wrap:wrap; gap:3px 6px; margin-top:2mm; }
+    .tag{ font-size:8.5pt; padding:2px 6px; border:1px solid var(--rule); border-radius:4px; }
+    .muted{ color:var(--muted); }
+    .small{ font-size:9pt; }
+  </style>
+</head>
+<body>
+  <!-- Screen controls -->
+  <div class="print-controls">
+    <div>
+      <a class="btn" href="index.html">← Back to site</a>
+    </div>
+    <div>
+      <a class="btn" id="printBtn" href="#">Print / Save PDF</a>
+    </div>
+  </div>
+
+  <!-- ===== PAGE 1 ===== -->
+  <main class="page">
+    <div class="page-inner">
+      <header class="header avoid-break">
+        <div class="identity">
+          <img class="avatar" src="./profile kopyası.png" alt="Çetin Tiryaki">
+          <div>
+            <div class="name">Çetin Tiryaki</div>
+            <div class="role">Computer Engineering Student · Full-Stack / Test Automation</div>
+          </div>
+        </div>
+        <div class="contact">
+          <div><a href="mailto:cetintiryaki47@gmail.com">cetintiryaki47@gmail.com</a></div>
+          <div><a href="tel:+905387123476">+90 538 712 34 76</a> · Istanbul, Türkiye</div>
+          <div><a href="https://github.com/cetintiryaki" target="_blank">github.com/cetintiryaki</a></div>
+          <div><a href="https://www.linkedin.com/in/" target="_blank">linkedin.com/in/—</a></div>
+        </div>
+      </header>
+
+      <section class="cols">
+        <aside class="col-left">
+          <section class="section avoid-break">
+            <h3 class="section-title">Summary</h3>
+            <p class="small">
+              Computer Engineering student specialising in full-stack development and test automation (Java, Selenium, Cucumber, JUnit, Maven).
+              Build responsive web UIs (HTML/CSS/JS/React/Bootstrap) and REST backends (Node.js, Django) with SQL/NoSQL databases.
+              Prototype networking systems (reliable UDP with SEQ/ACK & flow control, encrypted P2P chat) and run MATLAB/Monte Carlo simulations;
+              also explore generative art using Perlin noise. Strong CS foundations (Algorithms & Data Structures, OOP, x86-64).
+            </p>
+          </section>
+
+          <section class="section avoid-break">
+            <h3 class="section-title">Skills</h3>
+            <div class="item"><h4>Programming Languages</h4>
+              <div class="tag-list"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">Bash</span></div></div>
+            <div class="item"><h4>Frontend</h4>
+              <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">React</span><span class="tag">Bootstrap</span></div></div>
+            <div class="item"><h4>Backend & APIs</h4>
+              <div class="tag-list"><span class="tag">Node.js</span><span class="tag">Django</span><span class="tag">REST APIs</span></div></div>
+            <div class="item"><h4>Databases</h4>
+              <div class="tag-list"><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">MySQL</span></div></div>
+            <div class="item"><h4>AI / ML</h4>
+              <div class="tag-list"><span class="tag">Machine Learning</span><span class="tag">Neural Networks</span><span class="tag">TensorFlow</span><span class="tag">PyTorch</span><span class="tag">NLP</span></div></div>
+            <div class="item"><h4>Networking</h4>
+              <div class="tag-list"><span class="tag">TCP/IP</span><span class="tag">UDP</span><span class="tag">HTTP</span><span class="tag">Socket (Python)</span><span class="tag">Socket (C)</span><span class="tag">Protocol Design</span></div></div>
+            <div class="item"><h4>Security</h4>
+              <div class="tag-list"><span class="tag">SSL/TLS (basics)</span><span class="tag">Cryptography</span><span class="tag">OWASP Top 10</span><span class="tag">XSS</span><span class="tag">SQL Injection</span><span class="tag">Linux Security</span><span class="tag">Pentesting (basics)</span></div></div>
+            <div class="item"><h4>Testing & QA</h4>
+              <div class="tag-list"><span class="tag">Selenium</span><span class="tag">Cucumber (BDD)</span><span class="tag">JUnit</span><span class="tag">Maven</span><span class="tag">E2E Testing</span></div></div>
+          </section>
+        </aside>
+
+        <section class="col-right">
+          <section class="section avoid-break">
+            <h3 class="section-title">Experience</h3>
+            <div class="item">
+              <h4>Test Automation Developer (Intern) — Trendyol / Project</h4>
+              <div class="meta">2025 · Java, Selenium, Cucumber, WebDriverManager, JUnit, Maven</div>
+              <ul class="bullets">
+                <li>Implemented end-to-end automation flows for registration, login, and product scenarios.</li>
+                <li>Built reusable step definitions and page-object structures to reduce duplication.</li>
+                <li>Optimized reporting and parallel execution for CI pipelines.</li>
+              </ul>
+            </div>
+            <div class="item">
+              <h4>Academic & Personal Projects</h4>
+              <div class="meta">2024–2025 · Python, Java, C, Shell</div>
+              <ul class="bullets">
+                <li>Created <em>Progi</em> — a weekly planner & goals tracker with Python/CustomTkinter.</li>
+                <li>Prototyped UDP-based message/file transfer with flow control (Python).</li>
+                <li>Built stack/tokenizer components in Assembly and C for coursework.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section avoid-break">
+            <h3 class="section-title">Education</h3>
+            <div class="item">
+              <h4>Boğaziçi University — BSc in Computer Engineering</h4>
+              <div class="meta">2021 – present</div>
+              <ul class="bullets">
+                <li>Relevant coursework: Systems Programming, Data Structures, OOP, Computer Networks.</li>
+                <li>GPA / achievements (optional).</li>
+              </ul>
+            </div>
+            <div class="item">
+              <h4>Erzurum İbrahim Hakkı Science High School</h4>
+              <div class="meta">Graduated: 2021</div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <!-- ===== PAGE 2 ===== -->
+  <main class="page pb-before">
+    <div class="page-inner">
+      <header class="header avoid-break">
+        <div class="identity">
+          <img class="avatar" src="./profile kopyası.png" alt="Çetin Tiryaki">
+          <div>
+            <div class="name">Çetin Tiryaki</div>
+            <div class="role">Computer Engineering Student · Full-Stack / Test Automation</div>
+          </div>
+        </div>
+        <div class="contact">
+          <div><a href="mailto:cetintiryaki47@gmail.com">cetintiryaki47@gmail.com</a></div>
+          <div><a href="tel:+905387123476">+90 538 712 34 76</a> · Istanbul, Türkiye</div>
+          <div><a href="https://github.com/cetintiryaki" target="_blank">github.com/cetintiryaki</a></div>
+          <div><a href="https://www.linkedin.com/in/" target="_blank">linkedin.com/in/—</a></div>
+        </div>
+      </header>
+
+      <section class="section avoid-break">
+        <h3 class="section-title">Projects</h3>
+        <div class="item">
+          <h4>Describe&Draw — Text-to-Sketch AI (demo)</h4>
+          <div class="meta">Python, PyTorch/TensorFlow · 2025</div>
+          <ul class="bullets">
+            <li>Generates simple 2D drawings from natural-language prompts via lightweight CNN/Transformer blocks.</li>
+            <li>Built a minimal dataset and training loop; exported an interactive web demo.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h4>Proggy — Personal Planner (Web)</h4>
+          <div class="meta">HTML, CSS, JavaScript, Bootstrap · 2025</div>
+          <ul class="bullets">
+            <li>Responsive weekly planner & goals dashboard; deployed on <em>cetintiryaki.com</em>.</li>
+            <li>Componentized UI and localStorage-backed persistence.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h4>Portfolio Sites</h4>
+          <div class="meta">Full-Stack · 2025</div>
+          <ul class="bullets">
+            <li><em>cetintiryaki.com</em> and <em>aysetiryaki.com</em> with SEO, responsive layouts, and CI deployment.</li>
+            <li>Reusable card/carousel components and analytics hooks.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h4>Reliable UDP File Transfer</h4>
+          <div class="meta">Python, Sockets · 2024</div>
+          <ul class="bullets">
+            <li>Implemented TCP-like flow control (SEQ/ACK, RWND, retransmission) over UDP for files/messages.</li>
+            <li>Measured throughput/latency under packet loss; wrote protocol spec and test harness.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cols">
+        <aside class="col-left">
+          <section class="section avoid-break">
+            <h3 class="section-title">Certifications</h3>
+            <ul class="bullets">
+              <li>Udemy — Selenium 4 + Cucumber (2025)</li>
+              <li>Angela Yu — Full-Stack Web Development (ongoing)</li>
+            </ul>
+          </section>
+        </aside>
+        <section class="col-right">
+          <section class="section avoid-break">
+            <h3 class="section-title">Links</h3>
+            <ul class="bullets">
+              <li><a href="https://github.com/cetintiryaki" target="_blank">GitHub</a></li>
+              <li><a href="#" target="_blank">Portfolio</a></li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <!-- ===== PAGE 3 ===== -->
+  <main class="page pb-before">
+    <div class="page-inner">
+      <header class="header avoid-break">
+        <div class="identity">
+          <img class="avatar" src="./profile kopyası.png" alt="Çetin Tiryaki">
+          <div>
+            <div class="name">Çetin Tiryaki</div>
+            <div class="role">Computer Engineering Student · Full-Stack / Test Automation</div>
+          </div>
+        </div>
+        <div class="contact">
+          <div><a href="mailto:cetintiryaki47@gmail.com">cetintiryaki47@gmail.com</a></div>
+          <div><a href="tel:+905387123476">+90 538 712 34 76</a> · Istanbul, Türkiye</div>
+          <div><a href="https://github.com/cetintiryaki" target="_blank">github.com/cetintiryaki</a></div>
+          <div><a href="https://www.linkedin.com/in/" target="_blank">linkedin.com/in/—</a></div>
+        </div>
+      </header>
+
+      <section class="section avoid-break">
+        <h3 class="section-title">Projects (cont.)</h3>
+        <div class="item">
+          <h4>Encrypted Chat with Dynamic Key Rotation</h4>
+          <div class="meta">Python, Cryptography · 2024</div>
+          <ul class="bullets">
+            <li>Peer-to-peer messaging with per-message key derivation and periodic re-keying for forward secrecy.</li>
+            <li>Custom handshake + symmetric encryption; hobby-grade threat model.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h4>MATLAB Monte Carlo Simulations</h4>
+          <div class="meta">MATLAB · 2024–2025</div>
+          <ul class="bullets">
+            <li>Buffon’s needle, random walk/diffusion, and Perlin-noise-driven asteroid motion.</li>
+            <li>Parameter sweeps with visualization; reproducible scripts/reports.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h4>Generative Art Series</h4>
+          <div class="meta">Processing / Python / MATLAB · 2024–2025</div>
+          <ul class="bullets">
+            <li><em>Fireflies in the Dark</em>, <em>Time Table Visualization</em>, <em>The Blood</em> using Perlin noise & diffusion.</li>
+            <li>Real-time rendering and exportable frames; exhibited on campus.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h4>Web Test Automation Suites</h4>
+          <div class="meta">Java, Selenium, Cucumber, JUnit, Maven · 2025</div>
+          <ul class="bullets">
+            <li>E2E flows for Hepsiburada & Trendyol: register, login, product browse, cart, and reporting.</li>
+            <li>Page Object + reusable steps; parallel runs and CI integration.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h4>WitcherTracker — Text-Based Game</h4>
+          <div class="meta">C, Makefile · 2025</div>
+          <ul class="bullets">
+            <li>Modular inventory with parser/writer/processing; unit-tested stack operations.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section avoid-break">
+        <h3 class="section-title">Additional</h3>
+        <ul class="bullets">
+          <li>YKS (Turkish university entrance) national rank: 285th.</li>
+          <li>Train 3–4× per week; disciplined, detail-oriented, team-player.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const btn = document.getElementById('printBtn');
+    if(btn){ btn.addEventListener('click', (e)=>{ e.preventDefault(); window.print(); }); }
+    if(new URLSearchParams(location.search).has('print')){ setTimeout(()=>window.print(), 300); }
+  </script>
+</body>
+</html>

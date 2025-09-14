@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Çetin Tiryaki</title>
+
+  <!-- Fonts & Bootstrap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 m-3 p-2 bg-white rounded" href="#content">Skip to content</a>
+
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container px-3">
+    <a class="navbar-brand" href="index.html">Çetin Tiryaki</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <!-- ✅ Home butonu -->
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resume</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" id="downloadCV" href="CV.pdf" download="CV.pdf">Download</a></li>
+              <li><a class="dropdown-item" href="resume.html" target="_blank" rel="noopener">Preview</a></li>
+            </ul>
+          </li>
+        <li class="nav-item"><a class="nav-link" href="index.html#experience">Work Experience</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <main id="content">
+    <!-- HERO -->
+    <section id="home" class="hero-section py-5">
+      <div class="container">
+        <div class="row py-lg-5 align-items-center g-4">
+          <div class="col-lg-6 col-md-7">
+            <h1 class="fw-bold">Çetin Tiryaki</h1>
+            <p class="lead mb-4">Full‑Stack • Network • Matlab & Simulation • AI • Computer Security • Computer Art</p>
+            <div class="d-flex gap-2 flex-wrap mb-3">
+              <span class="badge text-bg-light">React / Bootstrap</span>
+              <span class="badge text-bg-light">Django / Node</span>
+              <span class="badge text-bg-light">Selenium / Cucumber</span>
+              <span class="badge text-bg-light">Perlin / Monte Carlo</span>
+            </div>
+            <div class="d-flex gap-2">
+              <a href="./aboutme.html" class="btn btn-light">About Me</a>
+              <a href="#contact" class="btn btn-outline-light">Contact</a>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 text-center">
+            <div class="glass d-inline-block">
+              <img src="./profile kopyası.png" alt="Çetin Tiryaki portrait" class="avatar img-fluid" width="220" height="220" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (Carousel kept, cleaned) -->
+    <section id="projects" class="py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Projects</h2>
+          <p class="text-secondary">Curated work across AI, Full‑Stack, Networks, Security, Matlab & Art</p>
+        </div>
+
+        <div id="cardCarousel" class="carousel carousel-dark slide" data-bs-ride="false" aria-label="Projects carousel">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <!-- AI -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img src="./AI.jpeg" alt="AI category" loading="lazy">
+                    <div class="card-body">
+                      <h5 class="card-title">Artificial Intelligence</h5>
+                      <div class="meta"><strong>Knowledge</strong></div>
+                      <ul class="list-compact">
+                        <li>Machine Learning, Neural Networks</li>
+                        <li>Python (TensorFlow, PyTorch)</li>
+                      </ul>
+                      <hr class="my-3">
+                      <div class="meta"><strong>Projects</strong></div>
+                      <ul class="list-compact">
+                        <li>Describe&Draw AI</li>
+                        <li>NLP chatbot</li>
+                      </ul>
+                      <a class="btn btn-sm btn-outline-secondary mt-2" href="#">View</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Full‑Stack -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img src="./FullStack.jpg" alt="Full‑Stack category" loading="lazy">
+                    <div class="card-body">
+                      <h5 class="card-title">Full‑Stack Development</h5>
+                      <div class="meta"><strong>Knowledge</strong></div>
+                      <ul class="list-compact">
+                        <li>Frontend: HTML, CSS, JS, React, Bootstrap</li>
+                        <li>Backend: Node.js, Django, REST APIs</li>
+                        <li>DB: PostgreSQL, MongoDB, MySQL</li>
+                      </ul>
+                      <hr class="my-3">
+                      <div class="meta"><strong>Projects</strong></div>
+                      <ul class="list-compact">
+                        <li>Proggy</li>
+                        <li>cetintiryaki.com</li>
+                        <li>aysetiryaki.com</li>
+                      </ul>
+                      <a class="btn btn-sm btn-outline-secondary mt-2" href="#">View</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Networks -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img src="./network.jpeg" alt="Network programming category" loading="lazy">
+                    <div class="card-body">
+                      <h5 class="card-title">Network Programming</h5>
+                      <div class="meta"><strong>Knowledge</strong></div>
+                      <ul class="list-compact">
+                        <li>TCP/IP, UDP, HTTP</li>
+                        <li>Sockets (Python, C)</li>
+                        <li>Protocol design & security</li>
+                      </ul>
+                      <hr class="my-3">
+                      <div class="meta"><strong>Projects</strong></div>
+                      <ul class="list-compact">
+                        <li>UDP file transfer</li>
+                        <li>Reliable messaging (TCP‑like)</li>
+                        <li>Peer‑to‑peer prototype</li>
+                      </ul>
+                      <a class="btn btn-sm btn-outline-secondary mt-2" href="#">View</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <!-- Matlab / MC -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img src="./monte carlo.jpeg" alt="Matlab & Monte Carlo category" loading="lazy">
+                    <div class="card-body">
+                      <h5 class="card-title">Matlab & Monte Carlo</h5>
+                      <div class="meta"><strong>Knowledge</strong></div>
+                      <ul class="list-compact">
+                        <li>Stochastic modeling</li>
+                        <li>Perlin noise, random walks</li>
+                      </ul>
+                      <hr class="my-3">
+                      <div class="meta"><strong>Projects</strong></div>
+                      <ul class="list-compact">
+                        <li>Buffon’s needle</li>
+                        <li>Noise‑based simulations</li>
+                        <li>Asteroid Perlin tubes</li>
+                      </ul>
+                      <a class="btn btn-sm btn-outline-secondary mt-2" href="#">View</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Security -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img src="./cs.jpg" alt="Computer Security category" loading="lazy">
+                    <div class="card-body">
+                      <h5 class="card-title">Computer Security</h5>
+                      <div class="meta"><strong>Knowledge</strong></div>
+                      <ul class="list-compact">
+                        <li>TLS basics, crypto</li>
+                        <li>OWASP, Linux security</li>
+                      </ul>
+                      <hr class="my-3">
+                      <div class="meta"><strong>Projects</strong></div>
+                      <ul class="list-compact">
+                        <li>Encrypted chat (dynamic keys)</li>
+                        <li>CTF lab / Metasploit</li>
+                        <li>Secure transfer (UDP/TCP)</li>
+                      </ul>
+                      <a class="btn btn-sm btn-outline-secondary mt-2" href="#">View</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Generative Art -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img src="./perlin.webp" alt="Generative art category" loading="lazy">
+                    <div class="card-body">
+                      <h5 class="card-title">Generative Art</h5>
+                      <div class="meta"><strong>Knowledge</strong></div>
+                      <ul class="list-compact">
+                        <li>Perlin‑based animation</li>
+                        <li>Diffusion & color mapping</li>
+                      </ul>
+                      <hr class="my-3">
+                      <div class="meta"><strong>Projects</strong></div>
+                      <ul class="list-compact">
+                        <li><em>Fireflies in the Dark</em></li>
+                        <li><em>Time Table Visualization</em></li>
+                        <li><em>The Blood</em></li>
+                      </ul>
+                      <a class="btn btn-sm btn-outline-secondary mt-2" href="#">View</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <!-- All Skills -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img src="./skills.png" alt="Skills collage" loading="lazy">
+                    <div class="card-body">
+                      <h5 class="card-title">All Skills</h5>
+                      <div class="meta"><strong>Knowledge</strong></div>
+                      <ul class="list-compact">
+                        <li>Algorithms & DS, OOP</li>
+                        <li>Assembly (x86‑64), Imaging</li>
+                      </ul>
+                      <hr class="my-3">
+                      <div class="meta"><strong>Projects</strong></div>
+                      <ul class="list-compact">
+                        <li>Pathfinding • Optimization</li>
+                        <li>Ranking • CLI apps</li>
+                        <li>Delivery simulation</li>
+                      </ul>
+                      <a class="btn btn-sm btn-outline-secondary mt-2" href="#">View</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testing -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img src="./software-testing.webp" alt="Testing category" loading="lazy">
+                    <div class="card-body">
+                      <h5 class="card-title">Testing</h5>
+                      <div class="meta"><strong>Knowledge</strong></div>
+                      <ul class="list-compact">
+                        <li>Selenium • Cucumber • Maven</li>
+                        <li>E2E Web Testing</li>
+                      </ul>
+                      <hr class="my-3">
+                      <div class="meta"><strong>Projects</strong></div>
+                      <ul class="list-compact">
+                        <li>Hepsiburada UI suite</li>
+                        <li>Custom BDD scenarios</li>
+                        <li>Testinium internship</li>
+                      </ul>
+                      <a class="btn btn-sm btn-outline-secondary mt-2" href="#">View</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Hobbies -->
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <img src="./hobbies.jpg" alt="Hobbies collage" loading="lazy">
+                    <div class="card-body">
+                      <h5 class="card-title">Hobbies</h5>
+                      <div class="meta"><strong>Knowledge</strong></div>
+                      <ul class="list-compact">
+                        <li>Theatre • Debate • Philosophy</li>
+                        <li>Film Studies</li>
+                      </ul>
+                      <hr class="my-3">
+                      <div class="meta"><strong>Projects & Activities</strong></div>
+                      <ul class="list-compact">
+                        <li>Nationwide tours & tournaments</li>
+                        <li>Essays & reviews</li>
+                      </ul>
+                      <a class="btn btn-sm btn-outline-secondary mt-2" href="#">View</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev" aria-label="Previous">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next" aria-label="Next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+
+          <!-- Indicators -->
+          <div class="carousel-indicators mt-4">
+            <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="1"></button>
+            <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1" aria-label="2"></button>
+            <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="2" aria-label="3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE (simple timeline) -->
+    <section id="experience" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Work Experience</h2>
+          <p class="text-secondary">Compact timeline of roles & highlights</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <ul class="timeline">
+              <li>
+                <span class="dot"></span>
+                <div class="tcard">
+                  <div class="d-flex justify-content-between flex-wrap gap-2">
+                    <h6 class="mb-1">Full‑Stack Developer — Freelance</h6>
+                    <div class="tmeta">2025 — Present</div>
+                  </div>
+                  <p class="mb-2 text-secondary small">Developed React/Django-based web applications with API design and cloud deployment</p>
+                </div>
+              </li>
+              <li>
+                <span class="dot"></span>
+                <div class="tcard">
+                  <div class="d-flex justify-content-between flex-wrap gap-2">
+                    <h6 class="mb-1">QA Automation Intern — Testinium</h6>
+                    <div class="tmeta">2025</div>
+                  </div>
+                  <p class="mb-2 text-secondary small">End-to-end test scenarios with Selenium + Cucumber, reporting, and contributions to the CI pipeline</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-5 footer-gradient">
+      <div class="container">
+        <div class="row g-4 align-items-start text-white">
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-3">Get in touch</h2>
+            <p class="mb-4">Collaborations, internships, and freelance opportunities.</p>
+            <div class="d-flex flex-column flex-sm-row gap-2 mb-4">
+              <a class="btn btn-light" href="https://wa.me/905387123476" target="_blank" rel="noopener">WhatsApp</a>
+              <a class="btn btn-outline-light" href="mailto:cetintiryaki47@gmail.com">cetintiryaki47@gmail.com</a>
+            </div>
+            <form class="row g-3 bg-white p-3 rounded-4 text-dark" action="mailto:cetintiryaki47@gmail.com" method="post" enctype="text/plain">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="Name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="Email" required>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="Message" rows="4" class="form-control" placeholder="Tell me about your idea…" required></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-dark border-0">Send</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div class="ratio ratio-4x3 rounded-4 overflow-hidden shadow">
+              <iframe title="Map" src="https://maps.google.com/maps?q=Boğaziçi%20Üniversitesi&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+            </div>
+            <p class="small mt-2 opacity-75">Based in İstanbul</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4">
+      <div class="container">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#home" class="nav-link px-2">About Me</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link px-2">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link px-2">Contact</a></li>
+        </ul>
+        <p class="text-center mb-0">© <span id="year"></span> | Çetin Tiryaki</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Nav active state on scroll
+    const navLinks = document.querySelectorAll('.navbar .nav-link');
+    const targets = Array.from(navLinks).map(l => document.querySelector(l.getAttribute('href')?.startsWith('#') ? l.getAttribute('href') : null)).filter(Boolean);
+    const setActive = () => {
+      let curr = targets[0];
+      const offset = 120;
+      targets.forEach(sec => { if (window.scrollY + offset >= sec.offsetTop) curr = sec;});
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + curr.id));
+    };
+    document.addEventListener('scroll', setActive);
+    window.addEventListener('load', setActive);
+  </script>
+</body>
+</html>
